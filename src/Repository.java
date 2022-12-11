@@ -10,13 +10,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
-public class Utility {
+public class Repository {
     public static Map<Timestamp, StringGlass> readFile(File file) {
-        Map<Timestamp, StringGlass> strings = new HashMap<>();
+        Map<Timestamp, StringGlass> strings = new TreeMap<>();
         try (FileReader reader = new FileReader(file)) {
             BufferedReader br = new BufferedReader(reader);
             while (br.ready()) {

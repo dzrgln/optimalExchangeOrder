@@ -1,8 +1,5 @@
 package src.entity;
 
-import java.sql.Timestamp;
-import java.util.Objects;
-
 public class ExchangeApplication {
     private final int amount;
     private final double price;

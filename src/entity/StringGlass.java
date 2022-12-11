@@ -1,6 +1,5 @@
 package src.entity;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 public class StringGlass {
@@ -41,7 +40,8 @@ public class StringGlass {
 
     @Override
     public String toString() {
-        return "SG: marketPrice: " + marketPrice + "; Ask_list: " + askExchangeApplicationList
-                + "; Bid_list: " + bidExchangeApplicationList;
+/*        return "SG: marketPrice: " + marketPrice + "; Ask_list: " + askExchangeApplicationList
+                + "; Bid_list: " + bidExchangeApplicationList;    */
+        return "\n +marketPrice: " + marketPrice;
     }
 }
